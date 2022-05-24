@@ -1,112 +1,75 @@
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(245, 175, 236);
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('./resourses/FondoPag3.jpg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
     text-align: center;
-}
-
-nav{
-    text-align: center;
-}
-
-ul{
-    display: inline-block;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: chocolate;
-}
-
-li{
-    display: inline-block;
-}
- *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
- 
- .form-register {
-     width: 400px; ;
-     background: #eaade0;
-     padding: 30px;
-     margin: auto;
-     margin-top: 100px;
-     border-radius: 40px;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     color: white
-     
-}
-
-.form-register h4{
-    font-size:22px ;
-    margin-bottom: 20px;
-    
-    
-}
-
-.controls{
-    width: 100;
-    background: #eb79da;
-    padding: 18px; ;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ef97e1;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10px;
-}
-
-.form-register p{
-    height: 40px;
-    text-align: center;
-    font-size:18px ;
-    line-height:  40px; 
-}
-.form-register a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    text-decoration: none;
 }
-
-.form-register a:hover {
-    color: white;
-    text-decoration:underline;
-}
-
-.form-register .botons {
+/* about section image css */
+.imageAboutPage {
     width: 100%;
-    background: #eb79da;
-    border: none;
-    padding:12px ;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
 }
-
-  
-
-
-main{
-    position: relative;
-    top: 35%;
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
     text-align: center;
 }
-
-.carouselslide{
-    display: block;
-    margin: auto;
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
 }
 
-.tamaño{
-    height: 600px;
-    width: 1000px;
+.navbarScroll.navbarDark {
+    background-color: rgb(255, 255, 255);
 }
 
-#tam{
-    height: 600px;
-    width: 1000px;
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
 }
-
-footer{
-    padding: 10px;
-    width: 1366px;
-    position: relative;
-    bottom: 0px;
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+    height:100px;
+}
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
 }
